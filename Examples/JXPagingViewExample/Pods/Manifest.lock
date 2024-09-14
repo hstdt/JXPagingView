@@ -1,27 +1,28 @@
 PODS:
   - JXPagingView/Paging (2.1.4)
-  - JXSegmentedView (1.0.2)
+  - JXSegmentedView (1.4.1)
   - MJRefresh (3.4.0)
 
 DEPENDENCIES:
   - JXPagingView/Paging (from `../../../JXPagingView`)
-  - JXSegmentedView
+  - JXSegmentedView (from `../../Sources/JXSegmentedView`)
   - MJRefresh (= 3.4.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - JXSegmentedView
     - MJRefresh
 
 EXTERNAL SOURCES:
   JXPagingView:
     :path: "../../../JXPagingView"
+  JXSegmentedView:
+    :path: "../../Sources/JXSegmentedView"
 
 SPEC CHECKSUMS:
   JXPagingView: 28ab45ab0f9811153ef28266071877d42483ba8c
-  JXSegmentedView: 2988fe07060a9b91b0112eabd6dee0df0cbca8b3
+  JXSegmentedView: cd73555ce2134d1656db2cb383ba9c2f36fb5078
   MJRefresh: 95b08b3b8b6457d2c69510439e0349599050ea34
 
-PODFILE CHECKSUM: dab91da853c9fd1be405d37420971efd00eb0086
+PODFILE CHECKSUM: b88862e6e9f164cdb479d488048024375c2a6081
 
 COCOAPODS: 1.15.2

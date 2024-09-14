@@ -1,0 +1,3 @@
+[submodule "Sources/JXSegmentedView"]
+	path = Sources/JXSegmentedView
+	url = git@github.com:hstdt/JXSegmentedView.git

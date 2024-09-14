@@ -20,7 +20,7 @@ class NestViewController: UIViewController {
         let titles = ["主题一", "主题二"]
         naviDataSource.titles = titles
         naviDataSource.itemSpacing = 0
-        naviDataSource.itemContentWidth = 80
+        naviDataSource.itemWidth = 80
         naviDataSource.titleNormalColor = .black
         naviDataSource.titleSelectedColor = .white
         naviDataSource.isTitleMaskEnabled = true
@@ -35,7 +35,7 @@ class NestViewController: UIViewController {
         indicatoryView.indicatorWidth = 80
         indicatoryView.indicatorHeight = 30
         indicatoryView.indicatorWidthIncrement = 0
-        indicatoryView.backgroundWidthIncrement = 0
+        indicatoryView.indicatorWidthIncrement = 0
         naviSegmentedView.indicators = [indicatoryView]
 
         navigationItem.titleView = naviSegmentedView
