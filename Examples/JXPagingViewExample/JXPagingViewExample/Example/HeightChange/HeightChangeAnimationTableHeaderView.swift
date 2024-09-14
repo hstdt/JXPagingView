@@ -15,7 +15,9 @@ class HeightChangeAnimationTableHeaderView: PagingViewTableHeaderView {
     private let descLabel: UILabel
 
     deinit {
-        toggleCallback = nil
+        MainActor.assumeIsolated {
+            toggleCallback = nil
+        }
     }
 
     override init(frame: CGRect) {

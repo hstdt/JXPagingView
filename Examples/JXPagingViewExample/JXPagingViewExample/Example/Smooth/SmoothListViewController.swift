@@ -10,6 +10,7 @@ import UIKit
 import JXPagingView
 import MJRefresh
 
+@MainActor
 @objc protocol SmoothListViewControllerDelegate {
     func startRefresh()
     func endRefresh()

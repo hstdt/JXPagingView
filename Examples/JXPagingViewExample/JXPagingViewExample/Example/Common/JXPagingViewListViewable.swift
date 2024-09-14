@@ -33,7 +33,7 @@ extension JXPagingViewListViewDelegate where Self: UIViewController {
     }
 }
 
-private var ListControllerViewDidScrollKey: Void?
+nonisolated(unsafe) private var ListControllerViewDidScrollKey = malloc(1)
 extension JXPagingViewListViewDelegate where Self: UIViewController {
     
     var listViewDidScrollCallback: ((UIScrollView) -> ())? {
@@ -68,7 +68,7 @@ extension JXPagingViewListViewDelegate where Self: UIView {
     }
 }
 
-private var ListViewDidScrollKey: Void?
+nonisolated(unsafe) private var ListViewDidScrollKey = malloc(1)
 extension JXPagingViewListViewDelegate where Self: UIView {
     
     var listViewDidScrollCallback: ((UIScrollView) -> ())? {
