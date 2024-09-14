@@ -16,6 +16,7 @@ public enum JXPagingListContainerType {
     case collectionView
 }
 
+@MainActor
 public protocol JXPagingViewListViewDelegate: NSObjectProtocol {
     /// 如果列表是VC，就返回VC.view
     /// 如果列表是View，就返回View自己
@@ -53,6 +54,7 @@ public extension JXPagingViewListViewDelegate {
     func listDidDisappear() {}
 }
 
+@MainActor
 public protocol JXPagingListContainerViewDataSource: NSObjectProtocol {
     /// 返回list的数量
     ///
@@ -87,6 +89,7 @@ public extension JXPagingListContainerViewDataSource {
     func scrollViewClass(in listContainerView: JXPagingListContainerView) -> AnyClass? { nil }
 }
 
+@MainActor
 protocol JXPagingListContainerViewDelegate: NSObjectProtocol {
     func listContainerViewDidScroll(_ listContainerView: JXPagingListContainerView)
     func listContainerViewWillBeginDragging(_ listContainerView: JXPagingListContainerView)

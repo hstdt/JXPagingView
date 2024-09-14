@@ -10,7 +10,7 @@ import UIKit
 import JXPagingView
 import JXSegmentedView
 
-extension JXPagingListContainerView: JXSegmentedViewListContainer {}
+extension JXPagingListContainerView: @retroactive JXSegmentedViewListContainer {}
 
 class BaseViewController: UIViewController, JXSegmentedViewDelegate {
     lazy var pagingView: JXPagingView = preferredPagingView()
